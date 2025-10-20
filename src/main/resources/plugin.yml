@@ -1,0 +1,31 @@
+name: RealisticHighlands2
+version: 1.0.0
+main: com.realistichighlands2.RealisticHighlands2
+api-version: 1.21
+author: PluginGenerator
+description: Tworzy piękne, realistyczne krajobrazy z górami, dolinami, rzekami i jeziorami, poprawiając generację świata.
+
+commands:
+  highlands:
+    description: Zarządza realistyczną generacją terenu.
+    permission: realistichighlands.admin
+    usage: /highlands <reload|info>
+  highlands_teleport:
+    description: Teleportuje do losowego miejsca w realistycznym świecie.
+    permission: realistichighlands.teleport
+    usage: /highlands_teleport [world_name]
+  regenerate_biome:
+    description: Zmienia biom obszaru (tylko w generowanym świecie RealisticHighlands).
+    permission: realistichighlands.admin
+    usage: /regenerate_biome <biome_type> [radius]
+
+permissions:
+  realistichighlands.admin:
+    description: Permission for highlands command
+    default: op
+  realistichighlands.teleport:
+    description: Permission for highlands_teleport command
+    default: op
+  realistichighlands.admin:
+    description: Permission for regenerate_biome command
+    default: op
